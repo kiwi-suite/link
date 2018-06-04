@@ -51,7 +51,7 @@ final class Link implements EntityInterface
     }
 
     
-    public function createDefinitions(): DefinitionCollection
+    protected static function createDefinitions(): DefinitionCollection
     {
         return new DefinitionCollection([
             new Definition('id', StringType::class, true, true),
